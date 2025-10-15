@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book a Table - Sanju Restaurant</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Great+Vibes&display=swap');
+
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      background-color: #fffaf2;
+      color: #3e2c1c;
+    }
+
+    header {
+      background-color: #3e2c1c;
+      color: #f8e3a1;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 2.2em;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    nav {
+      background-color: #b69155;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 14px 0;
+    }
+
+    nav a {
+      color: #fffaf2;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: #3e2c1c;
+    }
+
+    .booking-form {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    .booking-form h2 {
+      text-align: center;
+      color: #b69155;
+      font-size: 2em;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #3e2c1c;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 18px;
+      border: 1px solid #b69155;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    button {
+      width: 100%;
+      background-color: #b69155;
+      color: #fffaf2;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3e2c1c;
+    }
+
+    footer {
+      background-color: #3e2c1c;
+      color: #f8e3a1;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>Sanju Restaurant</header>
+  <nav>
+    <a href="rest.html">Home</a>
+    <!-- <a href="about.html">About</a> -->
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html">Book Table</a>
+  </nav>
+
+  <section class="booking-form">
+    <h2>Book a Table</h2>
+    <form action="#" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" required>
+
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" min="1" required>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time</label>
+      <input type="time" id="time" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <footer>© 2025 Designed by Sanjutha</footer>
+</body>
+</html>

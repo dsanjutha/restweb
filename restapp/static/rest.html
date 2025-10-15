@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanjutha Restaurant</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Great+Vibes&display=swap');
+
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      background-color: #fffaf2;
+      color: #3e2c1c;
+    }
+
+    header {
+      background-color: #3e2c1c;
+      color: #f8e3a1;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 2.2em;
+      font-family: 'Great Vibes', cursive;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: #b69155;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 14px 0;
+    }
+
+    nav a {
+      color: #fffaf2;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #3e2c1c;
+    }
+
+    section.About {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    section.About h1 {
+      font-size: 2.5em;
+      color: #b69155;
+      margin-bottom: 10px;
+    }
+
+    section.About p {
+      font-size: 1.2em;
+      color: #6d4b31;
+      margin-bottom: 40px;
+    }
+
+    .staff-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px;
+    }
+
+    .staff-gallery img {
+      width: 220px;
+      height: 220px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s, box-shadow 0.3s;
+      object-fit: cover;
+    }
+
+    .staff-gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    footer {
+      background-color: #3e2c1c;
+      color: #f8e3a1;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 1em;
+      letter-spacing: 0.5px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+      .staff-gallery img {
+        width: 160px;
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Sanjutha Restaurant</header>
+
+  <nav>
+    <a href="rest.html">Home</a>
+    <!-- <a href="about.html">About</a> -->
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html">Book Table</a>
+  </nav>
+
+  <section id="About" class="About">
+    <h1>Welcome to Sanju Restaurant</h1>
+    <p>Meet our dedicated and talented staff members</p>
+
+    <div class="staff-gallery">
+      <img src="actor5.jpg" alt="Staff 1">
+      <img src="actor2.jpeg" alt="Staff 2">
+      <img src="actor3.jpeg" alt="Staff 3">
+      <img src="actor4.jpeg" alt="Staff 4">
+      <img src="actor1.jpeg" alt="Staff 5">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Designed by Sanjutha
+  </footer>
+</body>
+</html>

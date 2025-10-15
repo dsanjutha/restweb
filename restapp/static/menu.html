@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Menu - Sanju Restaurant</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Great+Vibes&display=swap');
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      background-color: #fffaf2;
+      color: #3e2c1c;
+    }
+
+    header {
+      background-color: #3e2c1c;
+      color: #f8e3a1;
+      text-align: center;
+      padding: 25px 0;
+      font-size: 2.2em;
+      font-family: 'Great Vibes', cursive;
+    }
+
+    nav {
+      background-color: #b69155;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 14px 0;
+    }
+
+    nav a {
+      color: #fffaf2;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: #3e2c1c;
+    }
+
+    .menu {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .menu h2 {
+      font-size: 2.2em;
+      color: #b69155;
+      margin-bottom: 40px;
+    }
+
+    .menu-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .menu-item {
+      width: 250px;
+    }
+
+    .menu-item img {
+      width: 250px;
+      height: 200px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      display: block;
+    }
+
+    .menu-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .menu-item figcaption {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      padding: 0 4px;
+      font-size: 1em;
+    }
+
+    .menu-item .name {
+      font-weight: 600;
+      color: #3e2c1c;
+    }
+
+    .menu-item .price {
+      font-weight: 700;
+      color: #b69155;
+    }
+
+    footer {
+      background-color: #3e2c1c;
+      color: #f8e3a1;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>Sanju Restaurant</header>
+
+  <nav>
+    <a href="rest.html">Home</a>
+    <!-- <a href="about.html">About</a> -->
+    <a href="menu.html">Menu</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html">Book Table</a>
+  </nav>
+
+  <section class="menu">
+    <h2>Our Delicious Dishes</h2>
+    <div class="menu-gallery">
+      <figure class="menu-item">
+        <img src="food1.jpeg" alt="chicken burger">
+        <figcaption>
+          <span class="name">chicken burger</span>
+          <span class="price">₹249</span>
+        </figcaption>
+      </figure>
+      <figure class="menu-item">
+        <img src="food2.jpeg" alt="ramen chicken noodles">
+        <figcaption>
+          <span class="name">ramen chicken noodles</span>
+          <span class="price">₹299</span>
+        </figcaption>
+      </figure>
+      <figure class="menu-item">
+        <img src="food3.jpeg" alt="chinese pasta">
+        <figcaption>
+          <span class="name">chinese pasta</span>
+          <span class="price">₹149</span>
+        </figcaption>
+      </figure>
+      <figure class="menu-item">
+        <img src="food4.jpeg" alt="panner pizza">
+        <figcaption>
+          <span class="name">panner pizza</span>
+          <span class="price">₹349</span>
+        </figcaption>
+      </figure>
+      <figure class="menu-item">
+        <img src="food5.jpeg" alt="fruit salad">
+        <figcaption>
+          <span class="name">fruit salad</span>
+          <span class="price">₹199</span>
+        </figcaption>
+      </figure>
+      <figure class="menu-item">
+        <img src="food6.jpeg" alt="hyderabadi biriyani">
+        <figcaption>
+          <span class="name">hyderabadi biriyani</span>
+          <span class="price">₹99</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <footer>© 2025 Designed by Sanjutha</footer>
+</body>
+</html>
